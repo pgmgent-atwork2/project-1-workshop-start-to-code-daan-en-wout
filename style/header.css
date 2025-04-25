@@ -1,6 +1,6 @@
 .header {
   background: var(--gradient);
-  padding: var(--spacing-m) var(--spacing-l);
+  padding: var(--spacing-m) auto;
 
   & .header__title {
     font-size: var(--header-size);
