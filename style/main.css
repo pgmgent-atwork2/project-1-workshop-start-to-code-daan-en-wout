@@ -4,11 +4,16 @@
 @import url(container.css);
 @import url(nav.css);
 
-body{
-    font-family: "Roboto", sans-serif;
-    background-color: var(--background-color);
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-color);
 }
 
-.footer{
-    text-align: center;
+.main {
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.footer {
+  text-align: center;
 }

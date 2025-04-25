@@ -1,9 +1,10 @@
 .nav{
-    padding: var(--spacing-m);
     background-color: var(--text-color);
-    height: 100vh;
-    overflow: auto;
-    position:fixed ;
+  color: var(--background-color);
+  padding: var(--spacing-m);
+  height: 100vh;
+  position: sticky; 
+  top: 0;
 
     & .nav__item{
         margin-bottom: var(--spacing-m);
