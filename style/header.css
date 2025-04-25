@@ -8,15 +8,15 @@
     text-align: center;
     font-family: var(--font-title);
     font-weight: 800;
-    animation: header 2s ease-in;
+    // animation: header 2s ease-in;
   }
 }
 
-@keyframes header {
-  0% {
-    font-weight: 100;
-  }
-  100% {
-    font-weight: 800;
-  }
-}
+// @keyframes header {
+//   0% {
+//     font-weight: 100;
+//   }
+//   100% {
+//     font-weight: 800;
+//   }
+// }
