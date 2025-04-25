@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="color-picker__container">
+        <div class="color-picker__subcontainer">
+            <label class="color-picker__label">Achtergrondkleur</label>
+            <input type="color" id="background-color-picker">
+        </div>
+        <div class="color-picker__subcontainer">
+            <label class="color-picker__label">Knoppenkleur</label>
+            <input type="color" id="button-color-picker">
+        </div>
+    </div>
+
+    <main class="main">
+        <div class="calculator">
+            <div class="calculator-display">
+                <input type="text" class="display" readonly>
+            </div>
+            <div class="calculator-buttons">
+                <button data-value="AC" class="text">AC</button>
+                <button data-value="DEL" class="text">DEL</button>
+                <button data-value="%">%</button>
+                <button data-value="/" class="cal">/</button>
+                <button data-value="7">7</button>
+                <button data-value="8">8</button>
+                <button data-value="9">9</button>
+                <button data-value="*" class="cal">*</button>
+                <button data-value="4">4</button>
+                <button data-value="5">5</button>
+                <button data-value="6">6</button>
+                <button data-value="-" class="cal">-</button>
+                <button data-value="1">1</button>
+                <button data-value="2">2</button>
+                <button data-value="3">3</button>
+                <button data-value="+" class="cal">+</button>
+                <button data-value="00">00</button>
+                <button data-value="0">0</button>
+                <button data-value=".">.</button>
+                <button data-value="=" class="cal">=</button>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>

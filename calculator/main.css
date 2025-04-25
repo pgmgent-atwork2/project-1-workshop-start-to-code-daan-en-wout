@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Doto", sans-serif;
+  font-weight: 800;
+}
+body {
+  background: #daf0ff;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  position: relative;
+  border-radius: 1.3rem;
+  padding: 1.5rem 1.3rem 1.3rem 1.3rem;
+  background: #f7f8fb;
+  box-shadow: 0.3rem 0.3rem 0 0 black;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.calculator-display {
+  margin-bottom: 5rem;
+}
+.calculator-display input {
+  background: #fff;
+  border: 0.125rem solid black;
+  border-radius: 1rem;
+  font-size: 2rem;
+  padding: 0.75rem 1rem;
+  outline: 0;
+  text-align: right;
+  transition: all 0.3s ease-in-out;
+  font-family: "Doto", sans-serif;
+  font-weight: 800;
+  width: 21.5rem;
+  height: 4rem;
+}
+
+.calculator-buttons {
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(4, 5rem);
+  justify-content: center;
+  width: fit-content;
+}
+.calculator-buttons button {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 0;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0.9375rem;
+  color: black;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.calculator-buttons button.text {
+  color: #858585;
+  font-size: 1.2rem;
+}
+.calculator-buttons button.cal {
+  background: #ade2ff;
+}
+
+.calculator-buttons button:focus {
+  box-shadow: 0.2rem 0.2rem 0 0 black;
+}
+
+.color-picker__container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  position: absolute;
+}
+.color-picker__subcontainer {
+  display: flex;
+}
+
+.color-picker__label {
+  width: 15rem;
+  font-size: 1.5rem;
+}
