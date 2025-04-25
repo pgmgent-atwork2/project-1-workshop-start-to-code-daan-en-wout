@@ -4,3 +4,10 @@ display: grid;
   height: 100vh;
   overflow: hidden;
 }
+
+.container-flex{
+  display: flex;
+  margin: 1rem auto;
+  gap: 1rem;
+
+}

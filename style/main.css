@@ -3,6 +3,13 @@
 @import url(header.css);
 @import url(container.css);
 @import url(nav.css);
+@import url(section.css);
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
 
 body {
   font-family: "Roboto", sans-serif;

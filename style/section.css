@@ -1,0 +1,13 @@
+.section{
+    margin: 2rem auto;
+    width: 80%;
+
+    & .section__title{
+        font-size: var(--title-size);
+        margin-bottom: 1rem;
+    }
+
+    & .section__iframe{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+}
