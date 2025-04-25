@@ -1,6 +1,9 @@
 .nav{
     padding: var(--spacing-m);
     background-color: var(--text-color);
+    height: 100vh;
+    overflow: auto;
+    position: fixed;
 
     & .nav__item{
         margin-bottom: var(--spacing-m);
