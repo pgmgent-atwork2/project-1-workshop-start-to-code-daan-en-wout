@@ -1,6 +1,7 @@
 .header {
   background: var(--gradient);
   padding: var(--spacing-m) auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
   & .header__title {
     font-size: var(--header-size);

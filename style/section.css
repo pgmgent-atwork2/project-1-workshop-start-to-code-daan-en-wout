@@ -7,6 +7,20 @@
         margin-bottom: 1rem;
     }
 
+    & .section__link{
+        text-decoration: none;
+        color: var(--dark-color);
+        font-weight: 800;
+        font-size: 1.2rem;
+        border-bottom: solid .125rem var(--dark-color);
+        transition: all 0.2s ease-in-out;
+
+        &:hover{
+            color: hsl(158, 53%, 47%);
+            border-color: hsl(158, 53%, 47%);
+        }
+    }
+
     & .section__iframe{
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
