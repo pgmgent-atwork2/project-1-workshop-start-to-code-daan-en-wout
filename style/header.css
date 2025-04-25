@@ -1,12 +1,12 @@
 .header {
   background: var(--gradient);
-  padding: 2rem 5rem;
+  padding: var(--spacing-m) var(--spacing-l);
 
   & .header__title {
-    font-size: 15rem;
-    color: hsl(0, 0%, 18%);
+    font-size: var(--header-size);
+    color: var(--text-color);
     text-align: center;
-    font-family: "Doto", sans-serif;
+    font-family: var(--font-title);
     font-weight: 800;
     animation: header 2s ease-in;
   }
