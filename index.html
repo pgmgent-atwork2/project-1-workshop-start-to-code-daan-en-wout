@@ -29,15 +29,35 @@
                 </li>
 
                 <li class="nav__item">
-                    <a href="#html" class="nav__link">HTML</a>
+                    <a href="#project-structure" class="nav__link">PROJECT STRUCTURE</a>
                 </li>
 
                 <li class="nav__item">
-                    <a href="#css" class="nav__link">CSS</a>
+                    <a href="#html-basics" class="nav__link">HTML BASICS</a>
                 </li>
 
                 <li class="nav__item">
-                    <a href="#js" class="nav__link">JS</a>
+                    <a href="#calculator-html" class="nav__link">CALCULATOR HTML</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#css-basics" class="nav__link">CSS BASICS</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#calculator-css" class="nav__link">CALCULATOR CSS</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#calculator-js" class="nav__link">CALCULATOR JS</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#color-picker" class="nav__link">KLEURENKIEZER</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#final-result" class="nav__link">EINDRESULTAAT</a>
                 </li>
 
                 <li class="nav__item">
@@ -46,52 +66,401 @@
             </ul>
         </nav>
 
-
-
         <main class="main">
             <header class="header" id="home">
                 <h1 class="header__title">Calculator tutorial</h1>
             </header>
-            <!-- Setup -->
+            <div>
+                <a href="/calculator/calculator.html">Bekijk het eindresultaat</a>
+            </div>
+
+
             <section class="section" id="setup">
                 <h2 class="section__title">Het project starten!</h2>
 
                 <p class="section__text">
-                    Om te kunnen starten aan deze tutorial heb je <a class="section__link" href="https://code.visualstudio.com/download" target="_blank">Visual studio Code</a> nodig!
+                    Om te kunnen starten aan deze tutorial heb je <a class="section__link"
+                        href="https://code.visualstudio.com/download" target="_blank">Visual Studio Code</a> nodig!
+                </p>
+
+                <p class="section__text">
+                    In deze tutorial leer je stap voor stap een calculator bouwen met HTML, CSS en JavaScript.
+                    Dit project is perfect voor beginners die nog nooit hebben geprogrammeerd.
+                </p>
+
+                <p class="section__text">
+                    Je gaat leren hoe je:
+                </p>
+
+                <ul class="section__list">
+                    <li>Een basis HTML-structuur opzet</li>
+                    <li>CSS gebruikt om je calculator er mooi uit te laten zien</li>
+                    <li>JavaScript gebruikt om berekeningen uit te voeren</li>
+                    <li>Een kleurenkiezer implementeert om de look aan te passen</li>
+                </ul>
+
+                <h3 class="section__subtitle">Visual Studio Code installeren</h3>
+
+                <ol class="section__steps">
+                    <li>Ga naar <a href="https://code.visualstudio.com/download" target="_blank"
+                            class="section__link">https://code.visualstudio.com/download</a></li>
+                    <li>Download de versie die bij jouw besturingssysteem past (Windows, Mac of Linux)</li>
+                    <li>Installeer de applicatie door de installatie-instructies te volgen</li>
+                </ol>
+            </section>
+
+            <section class="section" id="project-structure">
+                <h2 class="section__title">Project structuur opzetten</h2>
+
+                <p class="section__text">
+                    Laten we beginnen met het opzetten van een goede mappenstructuur voor ons project.
+                </p>
+
+                <h3 class="section__subtitle">Stap 1: Maak een projectmap</h3>
+
+                <p class="section__text">
+                    Maak op je computer een nieuwe map aan met de naam "calculator-project".
+                </p>
+
+                <h3 class="section__subtitle">Stap 2: Maak de benodigde bestanden</h3>
+
+                <p class="section__text">
+                    In deze map gaan we 3 bestanden aanmaken:
+                </p>
+
+                <ul class="section__list">
+                    <li><strong>index.html</strong> - Voor de HTML-structuur van onze calculator</li>
+                    <li><strong>style.css</strong> - Voor de styling van onze calculator</li>
+                    <li><strong>script.js</strong> - Voor de werking van onze calculator</li>
+                </ul>
+
+                <div class="section__image">
+                    <!-- Hier komt een screenshot van de mappenstructuur -->
+                </div>
+
+                <h3 class="section__subtitle">Stap 3: Open het project in VS Code</h3>
+
+                <ol class="section__steps">
+                    <li>Open Visual Studio Code</li>
+                    <li>Klik op "File" (of "Bestand") in de menubalk</li>
+                    <li>Kies voor "Open Folder..." (of "Map openen...")</li>
+                    <li>Navigeer naar je calculator-project map en klik op "Select Folder" (of "Map selecteren")</li>
+                </ol>
+            </section>
+
+            <section class="section" id="html-basics">
+                <h2 class="section__title">HTML Basis</h2>
+
+                <p class="section__text">
+                    HTML (HyperText Markup Language) is de standaardtaal voor het maken van webpagina's.
+                    Met HTML geef je structuur aan je webpagina door verschillende elementen te gebruiken.
+                </p>
+
+                <h3 class="section__subtitle">Basis HTML-structuur</h3>
+
+                <p class="section__text">
+                    Een HTML-document begint altijd met een doctype declaratie, gevolgd door een html-element
+                    dat een head- en body-element bevat.
+                </p>
+
+                <div class="section__code">
+
+                    <iframe width="100%" height="300"
+                        src="//jsfiddle.net/daan_houbrechts/d43cevxs/13/embedded/html/dark/" frameborder="0"
+                        loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
+                </div>
+
+                <p class="section__text">
+                    <strong>Uitleg van de elementen:</strong>
+                </p>
+
+                <ul class="section__list">
+                    <li><code>&lt;!DOCTYPE html&gt;</code>: Vertelt de browser dat dit een HTML5-document is</li>
+                    <li><code>&lt;html&gt;</code>: Het hoofdelement van een HTML-document</li>
+                    <li><code>&lt;head&gt;</code>: Bevat meta-informatie over het document (zoals de titel en links naar
+                        CSS-bestanden)</li>
+                    <li><code>&lt;title&gt;</code>: De titel van de webpagina die in het browsertabblad wordt
+                        weergegeven</li>
+                    <li><code>&lt;body&gt;</code>: Bevat de zichtbare inhoud van de webpagina</li>
+                </ul>
+            </section>
+
+            <section class="section" id="calculator-html">
+                <h2 class="section__title">Calculator HTML Opbouwen</h2>
+
+                <p class="section__text">
+                    Nu gaan we de HTML-structuur voor onze calculator maken. We bouwen dit stap voor stap op.
+                </p>
+
+                <h3 class="section__subtitle">Stap 1: Basis HTML</h3>
+
+                <p class="section__text">
+                    Open je index.html bestand en voeg het volgende toe:
+                </p>
+
+                <div class="section__code">
+
+                    <iframe width="100%" height="300"
+                        src="//jsfiddle.net/daan_houbrechts/d43cevxs/15/embedded/html/dark/" frameborder="0"
+                        loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
+                </div>
+
+                <h3 class="section__subtitle">Stap 2: Voeg de calculator structuur toe</h3>
+
+                <p class="section__text">
+                    Nu gaan we de basisstructuur van onze calculator toevoegen binnen de body tags:
+                </p>
+
+                <div class="section__code">
+
+                    <iframe width="100%" height="300"
+                        src="//jsfiddle.net/daan_houbrechts/d43cevxs/18/embedded/html/dark/" frameborder="0"
+                        loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
+                </div>
+
+                <h3 class="section__subtitle">Stap 3: Voeg de knoppen toe</h3>
+
+                <p class="section__text">
+                    Nu voegen we alle knoppen toe aan onze calculator:
+                </p>
+
+                <div class="section__code">
+
+                    <iframe width="100%" height="300"
+                        src="//jsfiddle.net/daan_houbrechts/d43cevxs/21/embedded/html/dark/" frameborder="0"
+                        loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
+                </div>
+
+                <h3 class="section__subtitle">Stap 4: Voeg de kleurenkiezer toe</h3>
+
+                <p class="section__text">
+                    Als laatste voegen we de kleurenkiezer toe zodat gebruikers de kleuren van de calculator kunnen
+                    aanpassen:
+                </p>
+
+                <div class="section__code">
+
+                    <iframe width="100%" height="300"
+                        src="//jsfiddle.net/daan_houbrechts/d43cevxs/22/embedded/html/dark/" frameborder="0"
+                        loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
+                </div>
+
+                <p class="section__text">
+                    We hebben nu de volledige HTML-structuur voor onze calculator. In de volgende stappen gaan we
+                    styling toevoegen met CSS.
                 </p>
             </section>
 
-            <!-- HTML -->
-            <section class="section" id="html">
-                <h2 class="section__title">HTML</h2>
+            <section class="section" id="css-basics">
+                <h2 class="section__title">CSS Basis</h2>
 
                 <p class="section__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis cum, hic quas quia atque iste
-                    provident soluta deserunt similique, excepturi sint. Laboriosam autem iste dolorum veniam commodi
-                    incidunt quo ut.
+                    CSS (Cascading Style Sheets) is de taal die we gebruiken om HTML-elementen op te maken.
+                    Met CSS bepalen we hoe onze webpagina eruit ziet.
                 </p>
 
-                <div class="container container-flex">
-                    <iframe class="section__iframe" width="100%" height="300" src="//jsfiddle.net/yf48jboh/latest/embedded/html/dark/"
+                <h3 class="section__subtitle">Hoe werkt CSS?</h3>
+
+                <p class="section__text">
+                    CSS werkt door selectoren te gebruiken om HTML-elementen te selecteren, en vervolgens eigenschappen
+                    aan deze elementen toe te kennen.
+                </p>
+
+                <div class="section__code">
+                    <iframe width="100%" height="300"
+                        src="//jsfiddle.net/daan_houbrechts/d43cevxs/28/embedded/css/dark/" frameborder="0"
+                        loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
+                </div>
+
+                <p class="section__text">
+                    <strong>Basis CSS-concepten:</strong>
+                </p>
+
+                <ul class="section__list">
+                    <li><strong>Selectoren</strong>: Gebruikt om HTML-elementen te selecteren (bijvoorbeeld:
+                        <code>h1</code>, <code>.class</code>, <code>#id</code>)
+                    </li>
+                    <li><strong>Eigenschappen</strong>: Wat je wilt veranderen (bijvoorbeeld: <code>color</code>,
+                        <code>background-color</code>, <code>font-size</code>)
+                    </li>
+                    <li><strong>Waarden</strong>: De waarde die je aan de eigenschap wilt geven (bijvoorbeeld:
+                        <code>red</code>, <code>16px</code>, <code>#FFF</code>)
+                    </li>
+                </ul>
+            </section>
+
+            <section class="section" id="calculator-css">
+                <h2 class="section__title">Calculator CSS Toevoegen</h2>
+
+                <p class="section__text">
+                    Nu gaan we onze calculator stylen met CSS. We doen dit stap voor stap.
+                </p>
+
+                <h3 class="section__subtitle">Stap 1: Basis CSS-reset en body styling</h3>
+
+                <p class="section__text">
+                    Open je style.css bestand en voeg het volgende toe:
+                </p>
+
+                <div class="section__code">
+                    <iframe width="100%" height="300"
+                        src="//jsfiddle.net/daan_houbrechts/d43cevxs/31/embedded/css/dark/" frameborder="0"
+                        loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
+                </div>
+
+                <h3 class="section__subtitle">Stap 2: Style de calculator container</h3>
+
+                <p class="section__text">
+                    Nu gaan we de basis van onze calculator stylen:
+                </p>
+
+                <div class="section__code">
+                    <iframe width="100%" height="300"
+                        src="//jsfiddle.net/daan_houbrechts/d43cevxs/32/embedded/css/dark/" frameborder="0"
+                        loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
+                </div>
+
+                <h3 class="section__subtitle">Stap 3: Style het display en de knoppen</h3>
+
+                <p class="section__text">
+                    Vervolgens stylen we het display en de knoppen van de calculator:
+                </p>
+
+                <div class="section__code">
+                    <iframe width="100%" height="300"
+                        src="//jsfiddle.net/daan_houbrechts/d43cevxs/34/embedded/css/dark/" frameborder="0"
+                        loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
+                </div>
+
+                <h3 class="section__subtitle">Stap 4: Style de kleurenkiezer</h3>
+
+                <p class="section__text">
+                    Als laatste stylen we de kleurenkiezer:
+                </p>
+
+                <div class="section__code">
+                    <iframe width="100%" height="300"
+                        src="//jsfiddle.net/daan_houbrechts/d43cevxs/35/embedded/css/dark/" frameborder="0"
+                        loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
+
+                    <p class="section__text">
+                        Onze calculator begint er nu mooi uit te zien! In de volgende stappen gaan we functionaliteit
+                        toevoegen met JavaScript.
+                    </p>
+            </section>
+
+
+            <section class="section" id="calculator-js">
+                <h2 class="section__title">Calculator JavaScript Toevoegen</h2>
+
+                <p class="section__text">
+                    Nu gaan we onze calculator tot leven brengen met JavaScript. We voegen stap voor stap
+                    functionaliteit toe.
+                </p>
+
+                <h3 class="section__subtitle">Stap 1: Selecteer de elementen</h3>
+
+                <p class="section__text">
+                    Open je script.js bestand en voeg het volgende toe:
+                </p>
+
+                <div class="section__code">
+                    <iframe width="100%" height="300" src="//jsfiddle.net/daan_houbrechts/d43cevxs/40/embedded/js/dark/"
                         frameborder="0" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
-                    <iframe class="section__iframe" width="100%" height="300" src="//jsfiddle.net/yf48jboh/latest/embedded/result/dark/"
+                </div>
+
+                <h3 class="section__subtitle">Stap 2: Voeg de rekenfunctie toe</h3>
+
+                <p class="section__text">
+                    Nu voegen we de functie toe die de berekeningen zal uitvoeren:
+                </p>
+
+                <div class="section__code">
+                    <iframe width="100%" height="300" src="//jsfiddle.net/daan_houbrechts/d43cevxs/46/embedded/js/dark/"
+                        frameborder="0" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
+                </div>
+
+                <h3 class="section__subtitle">Stap 3: Voeg event listeners toe aan knoppen</h3>
+
+                <p class="section__text">
+                    Nu zorgen we ervoor dat onze knoppen reageren op klikken:
+                </p>
+
+                <div class="section__code">
+                    <iframe width="100%" height="300" src="//jsfiddle.net/daan_houbrechts/d43cevxs/42/embedded/js/dark/"
                         frameborder="0" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
                 </div>
             </section>
 
-            <!-- CSS -->
-            <section class="section" id="css">
-                <h2 class="section__title">css</h2>
+            <section class="section" id="color-picker">
+                <h2 class="section__title">Kleurenkiezer Toevoegen</h2>
+
+                <p class="section__text">
+                    Als laatste voegen we de functionaliteit toe om de kleuren van onze calculator aan te passen.
+                </p>
+
+                <h3 class="section__subtitle">JavaScript voor de kleurenkiezer</h3>
+
+                <p class="section__text">
+                    Voeg het volgende toe aan je script.js bestand:
+                </p>
+
+                <div class="section__code">
+                    <iframe width="100%" height="300" src="//jsfiddle.net/daan_houbrechts/d43cevxs/45/embedded/js/dark/"
+                        frameborder="0" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
+                </div>
+
+                <p class="section__text">
+                    Gefeliciteerd! Je hebt nu een volledig werkende calculator gemaakt die je ook nog eens kunt
+                    aanpassen qua kleuren.
+                </p>
             </section>
 
-            <!-- JS -->
-            <section class="section" id="js">
-                <h2 class="section__title">JS</h2>
+            <section class="section" id="final-result">
+                <h2 class="section__title">Eindresultaat</h2>
+
+                <p class="section__text">
+                    Dit is hoe je eindresultaat eruit zou moeten zien:
+                </p>
+
+                <div class="section__image">
+                    <!-- Hier komt een screenshot van het eindresultaat -->
+                </div>
+
+                <p class="section__text">
+                    Je hebt nu succesvol een calculator gebouwd met:
+                </p>
+
+                <ul class="section__list">
+                    <li>Een mooie gebruikersinterface met HTML en CSS</li>
+                    <li>Functionele rekenmachine met JavaScript</li>
+                    <li>Aanpasbare kleuren met de kleurenkiezer</li>
+                </ul>
+
+                <p class="section__text">
+                    Dit project heeft je de basis geleerd van:
+                </p>
+
+                <ul class="section__list">
+                    <li>HTML-structuur en elementen</li>
+                    <li>CSS-styling en opmaak</li>
+                    <li>JavaScript-programmering en DOM-manipulatie</li>
+                    <li>Event handling</li>
+                </ul>
+
+                <p class="section__text">
+                    Je kunt deze kennis nu gebruiken om andere projecten te bouwen en je vaardigheden verder te
+                    ontwikkelen!
+                </p>
             </section>
 
-            <!-- quiz -->
             <section class="section" id="quiz">
                 <h2 class="section__title">Quiz</h2>
+
+                <p class="section__text">
+                    Test je kennis met deze korte quiz over wat je hebt geleerd in deze tutorial.
+                </p>
+
             </section>
 
             <footer class="footer">
@@ -101,7 +470,7 @@
         </main>
     </div>
 
-    
+    <script src="script/script.js"></script>
 </body>
 
 </html>
