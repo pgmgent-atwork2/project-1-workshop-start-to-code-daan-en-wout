@@ -1,23 +1,23 @@
-.nav{
-    background-color: var(--text-color);
+.nav {
+  background-color: var(--text-color);
   color: var(--background-color);
   padding: var(--spacing-m);
   height: 100vh;
-  position: sticky; 
+  position: sticky;
   top: 0;
 
-    & .nav__item{
-        margin-bottom: var(--spacing-m);
-        font-size: 2rem;
-    }
+  & .nav__item {
+    margin-bottom: var(--spacing-m);
+    font-size: 1.2rem;
+  }
 
-    & .nav__link{
-        text-decoration: none;
-        color: var(--background-color);
-        transition: all 0.6s ease-in-out;
+  & .nav__link {
+    text-decoration: none;
+    color: var(--background-color);
+    transition: all 0.6s ease-in-out;
 
-        &:hover{
-            color: var(--light-color);
-        }
+    &:hover {
+      color: var(--light-color);
     }
+  }
 }
