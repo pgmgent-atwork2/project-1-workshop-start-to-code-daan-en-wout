@@ -1,27 +1,89 @@
-.section{
-    margin: 2rem auto;
-    width: 80%;
+.section {
+  margin: 2rem auto;
+  width: 80%;
 
-    & .section__title{
-        font-size: var(--title-size);
-        margin-bottom: 1rem;
+  & .section__title {
+    font-size: var(--title-size);
+    margin-bottom: 1rem;
+  }
+
+  & .section__subtitle {
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem 0;
+    color: var(--dark-color);
+    font-weight: 600;
+  }
+
+  & .section__text {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+
+  & .section__list {
+    margin: 1rem 0 1.5rem 2rem;
+    list-style-type: disc;
+    line-height: 1.6;
+  }
+
+  & .section__list li {
+    margin-bottom: 0.5rem;
+  }
+
+  & .section__steps {
+    margin: 1rem 0 1.5rem 2rem;
+    list-style-type: decimal;
+    line-height: 1.6;
+  }
+
+  & .section__steps li {
+    margin-bottom: 0.5rem;
+  }
+
+  & .section__code {
+    margin: 1.5rem 0;
+    background: #f5f5f5;
+    border-radius: 0.5rem;
+    padding: 1rem 0;
+  }
+
+  & .section__link {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: 800;
+    font-size: 1.2rem;
+    border-bottom: solid 0.125rem var(--dark-color);
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: hsl(158, 53%, 47%);
+      border-color: hsl(158, 53%, 47%);
     }
+  }
 
-    & .section__link{
-        text-decoration: none;
-        color: var(--dark-color);
-        font-weight: 800;
-        font-size: 1.2rem;
-        border-bottom: solid .125rem var(--dark-color);
-        transition: all 0.2s ease-in-out;
+  & .section__iframe {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+  }
 
-        &:hover{
-            color: hsl(158, 53%, 47%);
-            border-color: hsl(158, 53%, 47%);
-        }
-    }
+  & .section__image {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
 
-    & .section__iframe{
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    }
+  & code {
+    background-color: #f0f0f0;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: monospace;
+    font-size: 0.9rem;
+  }
+
+  & .quiz-container {
+    background-color: #f8f8f8;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin: 2rem 0;
+  }
 }
