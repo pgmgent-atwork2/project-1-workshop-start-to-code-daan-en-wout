@@ -1,6 +1,7 @@
 :root {
     --light-color:hsl(102, 92%, 63%);
     --dark-color:hsl(158, 56%, 35%);
+    --green-color:hsl(158, 53%, 47%);
 
 
   --gradient: linear-gradient(

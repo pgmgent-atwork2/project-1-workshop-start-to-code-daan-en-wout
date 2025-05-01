@@ -49,13 +49,12 @@
     transition: all 0.2s ease-in-out;
 
     &:hover {
-      color: hsl(158, 53%, 47%);
-      border-color: hsl(158, 53%, 47%);
+      color: var(--green-color);
+      border-color: var(--green-color);
     }
   }
 
   & .section__iframe {
-
     width: 100%;
     border: none;
     border-radius: 0.5rem;
@@ -65,18 +64,17 @@
     margin: 1.5rem 0;
     text-align: center;
     border-radius: 0.5rem;
-
   }
 
   & code {
-    background-color: #f0f0f0;
+    background-color: var(--background-color);
     padding: 2px 5px;
     border-radius: 3px;
     font-family: monospace;
     font-size: 0.9rem;
   }
 
-  & .section__img{
+  & .section__img {
     width: 100%;
     height: auto;
   }
