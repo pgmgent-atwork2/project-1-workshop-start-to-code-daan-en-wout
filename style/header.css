@@ -1,23 +1,28 @@
 .header {
   background: var(--gradient);
-  padding: var(--spacing-m) auto;
+  padding: var(--spacing-m) 0;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-align: center;
 
   & .header__title {
     font-size: var(--header-size);
     color: var(--text-color);
-    text-align: center;
     font-family: var(--font-title);
     font-weight: 800;
-    // animation: header 2s ease-in;
+    margin-bottom: 2rem;
+
+  }
+
+  & .header__link{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 2rem;
+    transition: all 0.6s ease-in-out;
+
+    &:hover{
+       color: var(--background-color);
+    }
   }
 }
 
-// @keyframes header {
-//   0% {
-//     font-weight: 100;
-//   }
-//   100% {
-//     font-weight: 800;
-//   }
-// }
+
