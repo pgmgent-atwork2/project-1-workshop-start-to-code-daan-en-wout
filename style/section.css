@@ -80,11 +80,4 @@
     width: 100%;
     height: auto;
   }
-
-  & .quiz-container {
-    background-color: #f8f8f8;
-    border-radius: 0.5rem;
-    padding: 1.5rem;
-    margin: 2rem 0;
-  }
 }

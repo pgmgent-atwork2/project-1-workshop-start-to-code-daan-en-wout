@@ -4,6 +4,7 @@
 @import url(container.css);
 @import url(nav.css);
 @import url(section.css);
+@import url(quiz.css);
 
 html, body {
   margin: 0;
