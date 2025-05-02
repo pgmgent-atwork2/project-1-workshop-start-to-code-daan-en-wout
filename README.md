@@ -64,4 +64,4 @@ Bekijk onze brainstorm voor het project in Figma:
 
 ---
 
-© 2024 | Arteveldehogeschool
+© 2025 | Arteveldehogeschool
