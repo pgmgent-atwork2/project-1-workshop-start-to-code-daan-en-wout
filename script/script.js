@@ -61,12 +61,22 @@ const questions = [
     correct: 3,
   },
   {
-    question: "Hoe selecteer je element via zijn class?",
+    question: "Hoe selecteer je een element via zijn class?",
     answers: [
       ".querySelector",
       ".addEventListener",
       ".class",
       ".ID",
+    ],
+    correct: 0,
+  },
+  {
+    question: "Wat doet addEventListener",
+    answers: [
+      "Zet een functie op een target",
+      "Zorgt ervoor dat ies klikbaar wordt",
+      "Maakt een nieuwe functie aan",
+      "Stelt je verjaardag in",
     ],
     correct: 0,
   },
