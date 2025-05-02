@@ -2,6 +2,9 @@
 
 Een interactieve web tutorial die je stap voor stap leert hoe je een rekenmachine bouwt met HTML, CSS en JavaScript.
 
+**Tutorial Page:** [Bekijk de tutorial](https://pgmgent-atwork2.github.io/project-1-workshop-start-to-code-daan-en-wout/)  
+**Calculator Demo:** [Probeer de calculator](https://pgmgent-atwork2.github.io/project-1-workshop-start-to-code-daan-en-wout/calculator/calculator.html)
+
 ![Calculator App Screenshot](/assets/img/result.png)
 
 ## Project Beschrijving
