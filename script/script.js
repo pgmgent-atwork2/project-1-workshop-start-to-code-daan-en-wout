@@ -74,7 +74,7 @@ const questions = [
     question: "Wat doet addEventListener",
     answers: [
       "Zet een functie op een target",
-      "Zorgt ervoor dat ies klikbaar wordt",
+      "Zorgt ervoor dat iets klikbaar wordt",
       "Maakt een nieuwe functie aan",
       "Stelt je verjaardag in",
     ],
